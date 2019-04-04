@@ -20,3 +20,8 @@ Genome size estimated to [3.1 Mbp](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC
 ```shell
 $ canu -p Genome_Assembly_E745_3.1M -d /home/karlnyr/Molecular_Evolution/Genome_Assembly -pacbio-corrected /home/karlnyr/Molecular_Evolution/raw_data/genomics_data/PacBio/*gz
 ```
+Submitted the above script with sbatch, now on to doing Illumina reads. First we perform a FastQC check, saving the data into metadata folder.
+```shell
+$ fastqc *fq.gz --outdir=/home/karlnyr/Molecular_Evolution/Metadata 
+```
+
