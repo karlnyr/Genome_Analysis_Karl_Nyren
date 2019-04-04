@@ -21,7 +21,7 @@ So in summary it is important to know how the data was gathered.
 ## RNA assembly
 Problems particular are either through biology, tech or a combination of the two. And we counter these with either methods or algorithms.
 
-###Some errors
+### Some errors
 - Transcript with different coverage
 There can be very high variation in coverage of genes. In e sample, they found that 5 % of the RNA is mRNA, which is low af. If we do DNA sequencing across genome we will get equal expressed genes, but RNA seq we get very different coverage. This makes it very hard if we get a gene from a part of a genome, but very low expressed, is it really expressed or not? 
 
