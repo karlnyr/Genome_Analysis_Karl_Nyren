@@ -2,7 +2,7 @@
 
 #SBATCH -A g2019003
 #SBATCH -p core
-#SBATCH -n 1
+#SBATCH -n 2
 #SBATCH -t 05:30:00
 #SBATCH -J Genome_Assembly_Karl_Nyren
 #SBATCH --mail-type=ALL
