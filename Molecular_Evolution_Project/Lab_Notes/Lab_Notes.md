@@ -1,4 +1,4 @@
-Day-04-04-2019: 
+## Day-04-04-2019: 
 Today I am getting set up for Canu, getting used to the data available. 
 Today PacBio data is mainly of inportance 
 ```shell
@@ -24,4 +24,11 @@ Submitted the above script with sbatch, now on to doing Illumina reads. First we
 ```shell
 $ fastqc *fq.gz --outdir=/home/karlnyr/Molecular_Evolution/Metadata 
 ```
+## Day-05-04-2019
+Today, check the asembly. BWA-mem.
 
+for BWA-mem, maybe use this code?
+```shell
+$ bwa mem ref.fa read1.fq read2.fq > aln-pe.sam
+```
+Due to issues with Canu, no files was had any content in the output. Thereby the only thing that had process was an elaboration of the project plan and running canu another time, with a few alterations to it, using the -l flag in the bash environment seemed to do the trick, now the assembly is done, next time we will check the assembly.  
