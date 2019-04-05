@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/bash -l
 
 #SBATCH -A g2019003
 #SBATCH -p core
@@ -11,4 +11,4 @@
 module load bioinfo-tools
 module load canu
 
-canu -p Genome_Assembly_E745_3.1M -d /home/karlnyr/Molecular_Evolution/Genome_Assembly genomeSize=3.1m -pacbio-corrected /home/karlnyr/Molecular_Evolution/raw_data/genomics_data/PacBio/*gz
+canu -p Genome_Assembly_V.2 -d /home/karlnyr/Molecular_Evolution/Genome_Assembly genomeSize=3.1m -pacbio-raw /home/karlnyr/Molecular_Evolution/raw_data/genomics_data/PacBio/*gz
