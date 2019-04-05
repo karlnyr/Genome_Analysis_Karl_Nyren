@@ -11,4 +11,4 @@
 module load bioinfo-tools
 module load canu
 
-canu -p Genome_Assembly_V.2 -d /home/karlnyr/Molecular_Evolution/Genome_Assembly genomeSize=3.1m -pacbio-raw /home/karlnyr/Molecular_Evolution/raw_data/genomics_data/PacBio/*gz
+canu -p Genome_Assembly_V.2 -d /home/karlnyr/Molecular_Evolution/Genome_Assembly genomeSize=3.1m -pacbio-raw /home/karlnyr/Molecular_Evolution/raw_data/genomics_data/PacBio/*fastq.gz
