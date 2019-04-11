@@ -32,3 +32,46 @@ for BWA-mem, maybe use this code?
 $ bwa mem ref.fa read1.fq read2.fq > aln-pe.sam
 ```
 Due to issues with Canu, no files was had any content in the output. Thereby the only thing that had process was an elaboration of the project plan and running canu another time, with a few alterations to it, using the -l flag in the bash environment seemed to do the trick, now the assembly is done, next time we will check the assembly.  
+
+## Day-11-04-2019
+
+Copied the contigs.fasta to separate folder and ran the indexing and then the mapping with the Illumina DNA reads. 
+```shell
+$ module load bioinfo-tools
+$ module load bwa/0.7.17
+$ bwa index Genome_Assembly_V.2.contigs.fasta
+
+$ bwa mem -M Genome_Assembly_V.2.contigs.fasta ~/path/to/Illumina/DNA/read1 ~/path/to/Illumina/DNA/read2 
+```
+
+```shell
+$ module load samtools/1.9
+$ samtools view -b Mapped_Assembly_1.sam -o Formatted_Alignments_1.bam
+$ samtools sort -o Sorted_Alignment_1.bam  Formatted_Alignments_1.bam 
+$ samtools index Sorted_Alignment_1.bam 
+```
+Thus I gained an indexed, sorted alignment file, was passed into pilon for correction and evaluation of contigs. 
+
+```shell
+$ module load Pilon/1.22
+$ pilon --genome Genome_Assembly_V.2.contigs.fasta --frags Sorted_Alignment_1.bam 
+```
+Gained a total of 8 contigs, where the Illumina reads had mean total coverage of 71.
+
+Onto evaluation of the assembly, first of: Quast
+
+```shell
+$ module load quast/4.5.4
+# Quast is a python programe that is located inside rackham, thus the path is given
+$ python /sw/apps/bioinfo/quast/4.5.4/rackham/bin/quast.py -o quast_results/results_assembled_contigs_110419 # Evaluation to assembled genome 
+$ python /sw/apps/bioinfo/quast/4.5.4/rackham/bin/quast.py -R GCA_001750885.1_ASM175088v1_genomic.fna -o quast_results/results_reference_genome_110419 # Evaluation to reference genome
+```
+
+For genome annotation we pass the assembly through prokka.
+
+```shell
+$ module load prokka/1.12-12547ca
+$ prokka --outdir /home/karlnyr/Molecular_Evolution/Annotation/DNA/Genome_Assembly --prefix annotated_assembly pilon.fasta
+```
+
+IGV is not working properly (might try to fix this later if Tn-seq analysis is run). For now 

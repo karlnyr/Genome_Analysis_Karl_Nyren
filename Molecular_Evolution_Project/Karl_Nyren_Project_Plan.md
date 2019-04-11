@@ -45,7 +45,14 @@ $ pilon --genome genome.fasta --frags <frags.bam>
 
 ## Assembly evaluation
 Visualize it in IGV, load Java, IGV, run IGV-node
-To evaluate the assembly we are going to use both [QUAST](http://quast.sourceforge.net/) and [MUMmerplot](https://jmonlong.github.io/Hippocamplus/2017/09/19/mummerplots-with-ggplot2/) package in R.
+To evaluate the assembly we are going to use both [QUAST](http://quast.sourceforge.net/) and [MUMmerplot](https://jmonlong.github.io/Hippocamplus/2017/09/19/mummerplots-with-ggplot2/).
+
+The plan is to evaluate the assembly by itself in QUAST, and also compare the gathered assembly to the assembly created in the paper.
+
+```shell 
+$ python quast.py assembly -o /output_dir # Evaluate the contigs
+$ python quast.py -R reference_genome assembly # Evaluate the contigs compared to reference genome. Note: Assembled genome from the paper
+```
 
 ## Structural and functional annotation
 For structural and functional analysis we will use [Prokka](http://www.vicbioinformatics.com/software.prokka.shtml), this data will be needed later on when we are going to perform differential expression analysis. 
@@ -71,7 +78,7 @@ $ zcat *fastq.gz | fastqc stdin:my_results --outdir=/some/special/dir_
 
    - Run [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic) to crop and trim the fastq files for higher quality reads.
 
-```
+```shell
 $ java -jar <"path to trimmomatic.jar"> PE [-threads <"threads] [-phred33 | -phred64] [-trimlog <"logFile">] ">] [-basein <"inputBase"> | <"input 1"> <"input 2">] [-baseout <"outputBase"> | <"unpaired output 1"> <"paired output 2"> <"unpaired output 2"> <"step 1">_)
 ```
 
