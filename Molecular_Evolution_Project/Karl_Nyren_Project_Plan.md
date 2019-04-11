@@ -11,17 +11,19 @@ Using the PacBio long reads data we don't use any quality checking tool. The rea
 - Approximate genome size, for coverage determination, and tech used for read generation. _
 
 ```shell
-e.g canu -p <assembly-prefix> -d <assembly-directory> genomeSize=<number>[g|m|k] -pacbio-corrected/raw(if corrected or raw from the start)_
+$ canu -p <assembly-prefix> -d <assembly-directory> genomeSize=<number>[g|m|k] -pacbio-corrected/raw(if corrected or raw from the start)_
 ```
 
 Correction is needed on the contigs, this will be a multiple step process integrating [BWA](http://bio-bwa.sourceforge.net/), [SAMtools](http://www.htslib.org/),and [Pilon](https://github.com/broadinstitute/pilon/wiki). 
 
 - BWA will be run using multiple tools, index, mem and alignment. This will produce valid contigs, that can be used for further analysis in coverage.
 
-```shell
-$ bwa index ref.fa
+The files going forward into these are the contigs assembled from Canu.
 
-$ bwa mem -M <ref.fa> <read1.fa> <read1.fa> > lane.sam
+```shell
+$ bwa index ref.fa # To first index the reference
+
+$ bwa mem -M <ref.fa> <read1.fa> <read1.fa> > lane.sam # Map the assembly with illumina reads for later correction in SAMtoools.
 ```
 
 - Coverage of both the acquired assembly will be meassured with [SAMtools](http://www.htslib.org/) which is using short read alignments to the assembly created in the above BWA. SAMtools will report probable assembly and base-calling errors, which then can be corrected for.
@@ -29,7 +31,6 @@ $ bwa mem -M <ref.fa> <read1.fa> <read1.fa> > lane.sam
 ```shell
 # Format the alignments, find the format on the in file automatically by -S, b is output into bam file and -o
 $ samtools view -Sb in.sam|in.bam|in.cram -o ~/home/user/out.bam
-
 # Sort the alignment file before creating an index
 $ samtools sort -O bam -o <lane_sorted.bam> -T </tmp/lane_temp> <lane_fixmate.sam>
 # Finally create an index. 
@@ -62,9 +63,17 @@ A Maximum Likelyhood Phylogenetic tree will be created using [ParSNP](https://ha
 ## Reads preprocessing: Trimming + quality check (before and after)
 We need to preprocess Illumina reads. As the title suggests, quality checking will be performed before and after the trimming process to observe posible events. 
 
-   - We use [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) in order to observe if there are any major issues with the data. (_e.g zcat *fastq.gz | fastqc stdin:my_results --outdir=/some/special/dir_)
+   - We use [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) in order to observe if there are any major issues with the data. 
 
-   - Run [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic) to crop and trim the fastq files for higher quality reads (_e.g java -jar <"path to trimmomatic.jar"> PE [-threads <"threads] [-phred33 | -phred64] [-trimlog <"logFile">] ">] [-basein <"inputBase"> | <"input 1"> <"input 2">] [-baseout <"outputBase"> | <"unpaired output 1"> <"paired output 2"> <"unpaired output 2"> <"step 1">_)
+```shell 
+$ zcat *fastq.gz | fastqc stdin:my_results --outdir=/some/special/dir_
+```
+
+   - Run [Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic) to crop and trim the fastq files for higher quality reads.
+
+```
+$ java -jar <"path to trimmomatic.jar"> PE [-threads <"threads] [-phred33 | -phred64] [-trimlog <"logFile">] ">] [-basein <"inputBase"> | <"input 1"> <"input 2">] [-baseout <"outputBase"> | <"unpaired output 1"> <"paired output 2"> <"unpaired output 2"> <"step 1">_)
+```
 
 ## RNA-Seq reads alignment against assembled genome
 To identify the genes expresed in the _E. faecium_, RNA-seq reads will be alligned using [BWA](http://bio-bwa.sourceforge.net/). The process will be the same for these reads, since they are in cDNA format after Illumina processing, and as before quality and trimming is required before processing. 
@@ -73,6 +82,27 @@ To identify the genes expresed in the _E. faecium_, RNA-seq reads will be allign
 Post BWA alignment differential expression is going to be calculated. This requires annotated data in combination with an analytical counting method. For this we will be using [Prokka](http://www.vicbioinformatics.com/software.prokka.shtml) data gathered above. Htseq is then used to count the expression data and from there we can start to draw conclusions in further analytical tools, such as R. 
 
 # Time frame
+As for time plan there is only so far one can prepare, the assesment of the output for instance can either go fast or quick. Below the approximated time for the processing is only displayed, as well as some preprocessing required for the Illumina reads. 
 
-#Data management plan
+- Trimmomatic - 2 hours
+- Spades - 2 hours
+- Canu - 4.5 hours
+- Quast - 10 min
+- MUMerplot - 1.5 hours
+- Prokka - 5 min
+- BWA - 15-30 minutes (depending on the data input)
+- Htseq - 10 min - 7 hours (depending on data input)
 
+As for milestones for the project:
+
+ | Week | Task |
+ |:---:|:---:|
+ | 14  | Project plan |                       
+ | 15  | Genome Assembly + Genome annotation |
+ | 17  | Comparative genomics |
+ | 19  | RNA mapping |
+
+# Data management plan
+As for data management I intend to follow as an simplistic system as possible. Visualized below is different steps that will be taken during the project, and thus information about them will be saved accordingly. I will keep my data separated after their processing and before their processing, and the processing part - mostly done by scripts - will be notified in both lab notes as well as saved scripts in a script folder. The meta data of raw, trimmed and evaluated data will be kept in separate folders respectively, divided after their purpose in the project. For post processing purposes the outcome of the processed data will be separated after purpose as well, and so will the output of the post analyses. 
+
+![Data management plan](https://github.com/kethuth/Genome_Analysis_Karl_Nyren/Molecular_Evolution_Project/Figures/data_management.png)
