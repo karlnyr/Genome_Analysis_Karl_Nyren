@@ -105,4 +105,4 @@ As for milestones for the project:
 # Data management plan
 As for data management I intend to follow as an simplistic system as possible. Visualized below is different steps that will be taken during the project, and thus information about them will be saved accordingly. I will keep my data separated after their processing and before their processing, and the processing part - mostly done by scripts - will be notified in both lab notes as well as saved scripts in a script folder. The meta data of raw, trimmed and evaluated data will be kept in separate folders respectively, divided after their purpose in the project. For post processing purposes the outcome of the processed data will be separated after purpose as well, and so will the output of the post analyses. 
 
-![Data management plan](https://github.com/kethuth/Genome_Analysis_Karl_Nyren/Molecular_Evolution_Project/Figures/data_management.png)
+![Data management plan](https://github.com/kethuth/Genome_Analysis_Karl_Nyren/blob/master/Molecular_Evolution_Project/Figures/data_management.png)
