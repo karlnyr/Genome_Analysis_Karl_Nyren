@@ -71,7 +71,7 @@ For genome annotation we pass the assembly through prokka.
 
 ```shell
 $ module load prokka/1.12-12547ca
-$ prokka --outdir /home/karlnyr/Molecular_Evolution/Annotation/DNA/Genome_Assembly --prefix annotated_assembly pilon.fasta
+$ prokka --outdir /home/karlnyr/Molecular_Evolution/Annotation/DNA/Genome_Assembly --prefix annotated_assembly Corrected_Assembly_Pilon_v1.contigs.fasta
 ```
 
 IGV is not working properly (might try to fix this later if Tn-seq analysis is run). For now post analysis will be done in QUAST.

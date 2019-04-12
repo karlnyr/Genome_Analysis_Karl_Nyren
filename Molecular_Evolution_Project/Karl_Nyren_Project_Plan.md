@@ -54,6 +54,10 @@ $ python quast.py assembly -o /output_dir # Evaluate the contigs
 $ python quast.py -R reference_genome assembly # Evaluate the contigs compared to reference genome. Note: Assembled genome from the paper
 ```
 
+GC content, in 100 bp slices out of the contigs, is 37.79 %. N50 is 2,773,702, which is also the largest contig, covering the chromosome of _E. faecium_. Total number of contigs acquired was 8. 
+
+Length of assembled genome was 32096 bp shorter than reference genome taken from [Zhang et al. 2017](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-017-4299-9). The GC content in the reference was 37.70 %, 12 misassembled blocks, and approximately 98 % coverage to the reference. 
+
 ## Structural and functional annotation
 For structural and functional analysis we will use [Prokka](http://www.vicbioinformatics.com/software.prokka.shtml), this data will be needed later on when we are going to perform differential expression analysis. 
 
