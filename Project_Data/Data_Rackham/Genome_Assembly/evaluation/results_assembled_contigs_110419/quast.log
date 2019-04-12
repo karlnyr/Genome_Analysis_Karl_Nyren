@@ -1,0 +1,61 @@
+/sw/bioinfo/quast/4.5.4/rackham/bin/quast.py -o quast_results/results_110419 pilon.fasta
+
+Version: 4.5.4
+
+System information:
+  OS: Linux-3.10.0-957.10.1.el7.x86_64-x86_64-with-centos-7.6.1810-Core (linux_64)
+  Python version: 2.7.6
+  CPUs number: 20
+
+Started: 2019-04-11 15:18:41
+
+Logging to /domus/h1/karlnyr/Molecular_Evolution/Genome_Assembly/evaluation/quast_results/results_110419/quast.log
+NOTICE: Maximum number of threads is set to 5 (use --threads option to set it manually)
+
+CWD: /domus/h1/karlnyr/Molecular_Evolution/Genome_Assembly/evaluation
+Main parameters: 
+  Threads: 5, minimum contig length: 500, ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  pilon.fasta ==> pilon
+
+2019-04-11 15:18:44
+Running Basic statistics processor...
+  Contig files: 
+    pilon
+  Calculating N50 and L50...
+    pilon, N50 = 2773702, L50 = 1, Total length = 3136314, GC % = 37.79, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /domus/h1/karlnyr/Molecular_Evolution/Genome_Assembly/evaluation/quast_results/results_110419/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /domus/h1/karlnyr/Molecular_Evolution/Genome_Assembly/evaluation/quast_results/results_110419/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /domus/h1/karlnyr/Molecular_Evolution/Genome_Assembly/evaluation/quast_results/results_110419/basic_stats/GC_content_plot.pdf
+  Drawing pilon GC content plot...
+    saved to /domus/h1/karlnyr/Molecular_Evolution/Genome_Assembly/evaluation/quast_results/results_110419/basic_stats/pilon_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding option to enable it.
+
+2019-04-11 15:18:46
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2019-04-11 15:18:47
+RESULTS:
+  Text versions of total report are saved to /domus/h1/karlnyr/Molecular_Evolution/Genome_Assembly/evaluation/quast_results/results_110419/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /domus/h1/karlnyr/Molecular_Evolution/Genome_Assembly/evaluation/quast_results/results_110419/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) saved to /domus/h1/karlnyr/Molecular_Evolution/Genome_Assembly/evaluation/quast_results/results_110419/report.html
+  PDF version (tables and plots) is saved to /domus/h1/karlnyr/Molecular_Evolution/Genome_Assembly/evaluation/quast_results/results_110419/report.pdf
+  Icarus (contig browser) is saved to /domus/h1/karlnyr/Molecular_Evolution/Genome_Assembly/evaluation/quast_results/results_110419/icarus.html
+  Log saved to /domus/h1/karlnyr/Molecular_Evolution/Genome_Assembly/evaluation/quast_results/results_110419/quast.log
+
+Finished: 2019-04-11 15:18:47
+Elapsed time: 0:00:06.519970
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
