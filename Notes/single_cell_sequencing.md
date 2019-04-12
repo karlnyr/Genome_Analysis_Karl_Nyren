@@ -2,8 +2,10 @@
 What single cell sequencing(SSC) offers us is that most of the things going on in a cell occurs on a molecular level. We can resolve variation within cells, done for both RNA and DNA as well as for eukaryotes and prokaryotes, however RNA is a bit tricky in prokaryotes. We can do SSC de novo or re-sequencing. Same as metagenomic, its a culture independant method, used as an complement for metagenomics to get a better idea of function location ina population(combination of MAGs and SAGs). Requires amplification because there is not enough DNA and RNA in a single cell to sequence right of the bat. 
 
 ## Workflow
+
 ### Isolated cells
 Keep cells intact. One could get single cells manually, laser microdissection machine. A much more common method is FACS that goes through a FACS machine, once we have a solution of cells we could have either marker genes that would pick for you. These three requires high volumes of sample, whilst microdroplets and microfluidics require way less sample. 
+
 ### Break apart cells, amplify material
 after we got our extracted cell there are methods to amplify the material inside them. Some methods are pure PCR methods with general primers. An issue with PCR based methods is that we have a large false positivity rate, and some parts of the genome will be missing. This due to that there is no real primer that would create the same coverage for every organism. Coverage here is amount of the genome that is found or no. The pro of the PCR method is though that the coverage is uniform over the DNA. One common method is MDA, that uses polymerases, and random primers and strong strand displacement and also a branch structure in the DNA, an issue is overrepresentaiton in the output. Then there are hybrind methods, minimizing the errors in both methods above and thus help. 
 
