@@ -76,6 +76,8 @@ $ prokka --outdir /home/karlnyr/Molecular_Evolution/Annotation/DNA/Genome_Assemb
 
 IGV is not working properly (might try to fix this later if Tn-seq analysis is run). For now post analysis will be done in QUAST.
 
-## Day-120419
+## Day-12-04-2019
 Checking the assembly in quast, the quast output was in HTML, easy to move around in. 
+
+## Day-24-04-2019
 

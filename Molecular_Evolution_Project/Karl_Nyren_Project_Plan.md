@@ -58,6 +58,11 @@ GC content, in 100 bp slices out of the contigs, is 37.79 %. N50 is 2,773,702, w
 
 Length of assembled genome was 32096 bp shorter than reference genome taken from [Zhang et al. 2017](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-017-4299-9). The GC content in the reference was 37.70 %, 12 misassembled blocks, and approximately 98 % coverage to the reference. 
 
+By the looks of our alignment to the genome (see figure below) we can observe an mismatch in startsite of the chromosome. Due to circular structure this is very much possible and not a major issue since it only involves the one main chromosome. 
+
+![Alignment of assembly to reference taken from Zhang et al. 2017](https://github.com/kethuth/Genome_Analysis_Karl_Nyren/tree/master/Molecular_Evolution_Project/Figures/DNA_assembly_alignment.png)
+
+
 ## Structural and functional annotation
 For structural and functional analysis we will use [Prokka](http://www.vicbioinformatics.com/software.prokka.shtml), this data will be needed later on when we are going to perform differential expression analysis. 
 
@@ -67,9 +72,15 @@ $ prokka --outdir mydir --prefix mygenome contigs.fa
 # Visualize it in Artemis
 $ art mydir/mygenome.gff
 ```
+The annotation gained a total of 3044 possible coding sequences in our assembly. When comparing to the papers annotation we are missing 51 coding sequences and reasons to this is to determine. However, difficulties with assignment of protein coding sequences is a concernm, for instance [Warren, Andrew S et al. 2010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3098052/) found that smaller coding proteins were hard to assign in common annotational tools. 
 
 ## Synteny comparison with a closely related genome
+
+THIS PART IS SUBJECT TO CHANGE!
+
 A Maximum Likelyhood Phylogenetic tree will be created using [ParSNP](https://harvest.readthedocs.io/en/latest/content/parsnp.html), using core genome of _E. faecium_ and 72 _E. Faecium_ strains. _Note: use -c  and -x_
+
+
 
 ## Reads preprocessing: Trimming + quality check (before and after)
 We need to preprocess Illumina reads. As the title suggests, quality checking will be performed before and after the trimming process to observe posible events. 
