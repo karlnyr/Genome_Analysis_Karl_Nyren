@@ -81,3 +81,4 @@ Checking the assembly in quast, the quast output was in HTML, easy to move aroun
 
 ## Day-24-04-2019
 
+The output Prokka annotational data is both functional and structural, showing us what genes are associated to specific gene loci and thus the function of the genes themselves. In terms of evaluation of the annotation one can look at the number of observed genes in the assembly and compare it to the papers genes. In our analysis ṕrokka found 3044 CDS and in the paper they found 3095, meaning we are missing 51 genes, either due to the fact that the assembly is not complete or Prokka had some issues finding the codings sequences. 

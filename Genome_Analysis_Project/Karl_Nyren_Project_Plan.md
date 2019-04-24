@@ -60,7 +60,7 @@ Length of assembled genome was 32096 bp shorter than reference genome taken from
 
 By the looks of our alignment to the genome (see figure below) we can observe an mismatch in startsite of the chromosome. Due to circular structure this is very much possible and not a major issue since it only involves the one main chromosome. 
 
-![Alignment of assembly to reference taken from Zhang et al. 2017](https://github.com/kethuth/Genome_Analysis_Karl_Nyren/tree/master/Molecular_Evolution_Project/Figures/DNA_assembly_alignment.png)
+![Alignment of assembly to reference taken from Zhang et al. 2017](https://github.com/kethuth/Genome_Analysis_Karl_Nyren/blob/master/Molecular_Evolution_Project/Figures/DNA_assembly_alignment.png)
 
 
 ## Structural and functional annotation
