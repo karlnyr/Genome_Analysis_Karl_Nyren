@@ -75,6 +75,7 @@ $ art mydir/mygenome.gff
 The annotation gained a total of 3044 possible coding sequences in our assembly. When comparing to the papers annotation we are missing 51 coding sequences and reasons to this is to determine. However, difficulties with assignment of protein coding sequences is a concernm, for instance [Warren, Andrew S et al. 2010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3098052/) found that smaller coding proteins were hard to assign in common annotational tools. 
 
 ## Synteny comparison with a closely related genome
+Synteny comparison will be performed by comparing the assembled genome to the papers genome as well as to an public record of _E. hirae_. The comparison to the paper will tell us a bit more about how the assembly, since we used another software, is different and the one to the closely related one will hopefully give us some insight into vancomycin resistant genes. Í chose _E. hirae_ due to resistance for vancomycin has been prooven by [Toosa, H et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3433965/) and is closely related to _E. faeciunm_([Naser et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1153757/)).
 
 THIS PART IS SUBJECT TO CHANGE!
 
