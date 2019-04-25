@@ -77,6 +77,8 @@ The annotation gained a total of 3044 possible coding sequences in our assembly.
 ## Synteny comparison with a closely related genome
 Synteny comparison will be performed by comparing the assembled genome to the papers genome as well as to an public record of _E. hirae_. The comparison to the paper will tell us a bit more about how the assembly, since we used another software, is different and the one to the closely related one will hopefully give us some insight into vancomycin resistant genes. Í chose _E. hirae_ due to resistance for vancomycin has been prooven by [Toosa, H et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3433965/) and is closely related to _E. faeciunm_([Naser et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1153757/)).
 
+Without going any further into analysis of the synteny, which could be done after the differential analysis, we can say that our genome does compare better with the papers genome than the _E. hirae_. A lot of inversions are seen in the alignment which could be due to the shift in the starting sequence that we observed above in the mummerplot. The figures of synteny can be found [here](https://github.com/kethuth/Genome_Analysis_Karl_Nyren/blob/master/Project_Data/Data_Rackham/Synteny_Comparison/Comparisons/)
+
 THIS PART IS SUBJECT TO CHANGE!
 
 A Maximum Likelyhood Phylogenetic tree will be created using [ParSNP](https://harvest.readthedocs.io/en/latest/content/parsnp.html), using core genome of _E. faecium_ and 72 _E. Faecium_ strains. _Note: use -c  and -x_
