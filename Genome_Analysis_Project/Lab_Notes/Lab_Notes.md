@@ -82,3 +82,16 @@ Checking the assembly in quast, the quast output was in HTML, easy to move aroun
 ## Day-24-04-2019
 
 The output Prokka annotational data is both functional and structural, showing us what genes are associated to specific gene loci and thus the function of the genes themselves. In terms of evaluation of the annotation one can look at the number of observed genes in the assembly and compare it to the papers genes. In our analysis ṕrokka found 3044 CDS and in the paper they found 3095, meaning we are missing 51 genes, either due to the fact that the assembly is not complete or Prokka had some issues finding the codings sequences. 
+
+## Day-25-04-2019
+
+Reaslized that we can do some cool stuff with synteny, will be using E. hirae to find vancomycin relationships, even though its not enough to make functionality calls of restistances we can try to make some cunclusions later on after we do some expressional analysis. We will also compare the assemblies again through synteny to see if there are any major concerning differences. 
+
+```shell
+$ module load blast/2.7.1+
+$ module load artemis/16.0.0
+$ blast_queries]$ blastn -query ~/Molecular_Evolution/Synteny/Assembly/Corrected_Assembly_Pilon_v1.contigs.fasta -db ~/Molecular_Evolution/Synteny/E_Hirae/GCA_000393835.1_Ente_hira_ATCC8043_V1_genomic.fna -evalue 1 -task megablast -outfmt 6 > Assembly_E_Hirae.crunch
+$ blastn -query ~/Molecular_Evolution/Synteny/Assembly/Corrected_Assembly_Pilon_v1.contigs.fasta -db ~/Molecular_Evolution/Synteny/Paper_Assembly/GCA_001750885.1_ASM175088v1_genomic.fna -evalue 1 -task megablast -outfmt 6 > Assembly_E_Faecium.crunch
+```
+
+Now we have two alignments, lets put them into ACT to do a sidewise comparison. 
