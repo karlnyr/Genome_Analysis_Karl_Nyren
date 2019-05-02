@@ -95,3 +95,14 @@ $ blastn -query ~/Molecular_Evolution/Synteny/Assembly/Corrected_Assembly_Pilon_
 ```
 
 Now we have two alignments, lets put them into ACT to do a sidewise comparison. 
+
+## Day-02-05-2019
+
+Looking into the untrimmed and trimmed reads, will check before and after trimming. 
+```shell
+$ module load bioinfo-tools
+$ module load FastQC/0.11.5
+$ fastqc *fastq.gz --outdir /home/karlnyr/Genome_Analysis/Metadata/FastQC/transcriptomic_data/RNA_serum/untrimmed
+```
+
+Created batch script to perform the fastqc check on the trimmed and untrummed reads. Time to do trimming on one of the RNA-seq files. 
