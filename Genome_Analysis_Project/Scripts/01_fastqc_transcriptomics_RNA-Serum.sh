@@ -2,8 +2,8 @@
 
 #SBATCH -A g2019003
 #SBATCH -p core
-#SBATCH -n 2
-#SBATCH -t 00:30:00
+#SBATCH -n 4
+#SBATCH -t 01:30:00
 #SBATCH -J FastQC_RNA-serum_Karl_Nyren
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user karl.nyren.6523@student.uu.se
