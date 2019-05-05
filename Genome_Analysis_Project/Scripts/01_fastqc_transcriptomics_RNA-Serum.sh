@@ -18,3 +18,8 @@ fastqc \
     fastqc \
     /home/karlnyr/Genome_Analysis/raw_data/transcriptomics_data/RNA-Seq_Serum/*fastq.gz \
     --outdir /home/karlnyr/Genome_Analysis/Metadata/FastQC/transcriptomic_data/RNA_serum/paper_trimmed \
+    && \
+    fastqc \
+    /home/karlnyr/Genome_Analysis/Trimmed_data/RNA-Serum/collected_trimmed_data/*fastq.bz2 \
+    --outdir /home/karlnyr/Genome_Analysis/Metadata/FastQC/transcriptomic_data/RNA_serum/self_trimmed
+
