@@ -90,7 +90,7 @@ Reaslized that we can do some cool stuff with synteny, will be using E. hirae to
 ```shell
 $ module load blast/2.7.1+
 $ module load artemis/16.0.0
-$ blast_queries]$ blastn -query ~/Molecular_Evolution/Synteny/Assembly/Corrected_Assembly_Pilon_v1.contigs.fasta -db ~/Molecular_Evolution/Synteny/E_Hirae/GCA_000393835.1_Ente_hira_ATCC8043_V1_genomic.fna -evalue 1 -task megablast -outfmt 6 > Assembly_E_Hirae.crunch
+$ blastn -query ~/Molecular_Evolution/Synteny/Assembly/Corrected_Assembly_Pilon_v1.contigs.fasta -db ~/Molecular_Evolution/Synteny/E_Hirae/GCA_000393835.1_Ente_hira_ATCC8043_V1_genomic.fna -evalue 1 -task megablast -outfmt 6 > Assembly_E_Hirae.crunch
 $ blastn -query ~/Molecular_Evolution/Synteny/Assembly/Corrected_Assembly_Pilon_v1.contigs.fasta -db ~/Molecular_Evolution/Synteny/Paper_Assembly/GCA_001750885.1_ASM175088v1_genomic.fna -evalue 1 -task megablast -outfmt 6 > Assembly_E_Faecium.crunch
 ```
 
@@ -106,3 +106,16 @@ $ fastqc *fastq.gz --outdir /home/karlnyr/Genome_Analysis/Metadata/FastQC/transc
 ```
 
 Created batch script to perform the fastqc check on the trimmed and untrummed reads. Time to do trimming on one of the RNA-seq files. 
+
+## Day-07-05-2019
+
+After performing fastqc checks on both trimmed, untrimmed and trimmed data we can gather that 
+
+
+Today it seems fit to align the RNA reads to the genome assembly, to then put all of it into ht-seq. 
+
+```shell
+$ module load bioinfo-tools
+$ module load htseq/0.9.1
+$ 
+```
