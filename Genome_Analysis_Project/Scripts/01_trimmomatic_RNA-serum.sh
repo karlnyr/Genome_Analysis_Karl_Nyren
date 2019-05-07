@@ -21,7 +21,7 @@ FILE_EXT_2="_pass_2.fastq.gz"
 
 for FILE in $INPUT_DIR/ERR1*pass_1.*;
     do
-        READ_PAIR_NAME='basename $FILE | cut -d "_" -f 1'
+        READ_PAIR_NAME=`basename $FILE | cut -d "_" -f 1`
         WORK_DIR=$OUT_DIR/$READ_PAIR_NAME
         tmp_WD=$OUT_DIR/$READ_PAIR_NAME/tmp
         mkdir -p $tmp_WD
