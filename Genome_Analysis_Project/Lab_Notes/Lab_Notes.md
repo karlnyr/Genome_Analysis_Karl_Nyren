@@ -114,8 +114,7 @@ After performing fastqc checks on both trimmed, untrimmed and trimmed data we ca
 
 Today it seems fit to align the RNA reads to the genome assembly, to then put all of it into ht-seq. 
 
-```shell
-$ module load bioinfo-tools
-$ module load htseq/0.9.1
-$ 
-```
+## Day-13-05-2019
+
+Due to errors when trying to run htseq-count, I decided to convert the file into a gtf instead of a gff. 
+
