@@ -21,3 +21,4 @@ OUTDIR='/home/karlnyr/Genome_Analysis/gene_counts'
 for FILE in $ALIGNMENT_DIRS/$RNA_SERUM/ERR*;
     do
         samtools view $FILE | htseq-count --format bam --type CDS  $FILE  > rna_bh_ERR1797972_counts.txt
+done
