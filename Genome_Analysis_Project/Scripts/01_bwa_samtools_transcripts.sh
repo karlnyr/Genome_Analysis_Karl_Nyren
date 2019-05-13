@@ -20,8 +20,8 @@ OUTDIR='/home/karlnyr/Genome_Analysis/Mapping'
 
 
 FILE_PRE='trim_paired_'
-FILE_EXT_1='pass_1.fastq.gz'
-FILE_EXT_2='pass_2.fastq.gz'
+FILE_EXT_1='_pass_1.fastq.gz'
+FILE_EXT_2='_pass_2.fastq.gz'
 
 for FILE in $INPUTDIR/$RNA_SERUM/trim*pass_1*;
     do
