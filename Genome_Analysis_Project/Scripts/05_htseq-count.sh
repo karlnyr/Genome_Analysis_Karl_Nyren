@@ -17,13 +17,14 @@ RNA_BH='RNA-Seq_BH'
 ANNOTATION_DIR='/home/karlnyr/Genome_Analysis/gene_counts/Genome_Assembly/'
 ALIGNMENT_DIRS='/home/karlnyr/Genome_Analysis/gene_counts'
 OUTDIR='/home/karlnyr/Genome_Analysis/gene_counts'
+FILE_EXT='_count_140519.txt'
 
 for FILE in $ALIGNMENT_DIRS/$RNA_SERUM/ERR*;
     do
-        samtools view $FILE | htseq-count --format bam --type CDS  $FILE  $ANNOTATION_DIR/*.gtf > $OUTDIR/$FILE
+        samtools view $FILE | htseq-count --format bam --type CDS  $FILE  $ANNOTATION_DIR/*.gtf > $FILE$FILE_EXT
 done
 
 for FILE in $ALIGNMENT_DIRS/$RNA_BH/ERR*;
     do
-        samtools view $FILE | htseq-count --format bam --type CDS  $FILE  $ANNOTATION_DIR/*.gtf > $OUTDIR/$FILE$FILE_EXT
+        samtools view $FILE | htseq-count --format bam --type CDS  $FILE  $ANNOTATION_DIR/*.gtf > $FILE$FILE_EXT
 done
