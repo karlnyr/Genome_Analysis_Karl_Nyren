@@ -15,8 +15,8 @@ module load samtools/1.9
 RNA_SERUM='RNA-Seq_Serum'
 RNA_BH='RNA-Seq_BH'
 ANNOTATION_DIR='/home/karlnyr/Genome_Analysis/gene_counts/Genome_Assembly/'
-ALIGNMENT_DIRS='/home/karlnyr/Genome_Analysis/gene_counts'
-OUTDIR='/home/karlnyr/Genome_Analysis/gene_counts'
+ALIGNMENT_DIRS='/home/karlnyr/Genome_Analysis/Mapping'
+OUTDIR='/home/karlnyr/Genome_Analysis/gene_counts/gene_counts'
 FILE_EXT='_count_140519.txt'
 
 for FILE in $ALIGNMENT_DIRS/$RNA_SERUM/ERR*;
