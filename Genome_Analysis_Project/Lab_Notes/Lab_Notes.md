@@ -118,3 +118,6 @@ Today it seems fit to align the RNA reads to the genome assembly, to then put al
 
 Due to errors when trying to run htseq-count, I decided to convert the file into a gtf instead of a gff. 
 
+## Day-16-05-2019
+
+My htseq succeeded but due to a faulty conversion of my annotation I needed to borrow a script that a friend had used to convert gbk to gtf. Now I have correctly assigned "gene_id" columns, so ht-seq should be successful.
