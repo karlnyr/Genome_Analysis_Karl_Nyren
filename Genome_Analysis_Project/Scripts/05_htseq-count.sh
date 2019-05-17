@@ -22,11 +22,11 @@ FILE_EXT='_count_140519.txt'
 for FILE in $ALIGNMENT_DIRS/$RNA_SERUM/ERR*;
     do
         OUTPUT_N=`basename $FILE`
-        samtools view $FILE | htseq-count --format bam --type CDS  $FILE --idattr  $ANNOTATION_DIR > $OUTDIR/$OUTPUT_N$FILE_EXT
+        samtools view $FILE | htseq-count --format bam --type CDS  $FILE $ANNOTATION_DIR > $OUTDIR/$RNA_SERUM$OUTPUT_N$FILE_EXT
 done
 
 for FILE in $ALIGNMENT_DIRS/$RNA_BH/ERR*;
     do
         OUTPUT_N=`basename $FILE`
-        samtools view $FILE | htseq-count --format bam --type CDS  $FILE  $ANNOTATION_DIR > $OUTDIR/$OUTPUT_N$FILE_EXT
+        samtools view $FILE | htseq-count --format bam --type CDS  $FILE  $ANNOTATION_DIR > $OUTDIR/$RNA_BH$OUTPUT_N$FILE_EXT
 done
