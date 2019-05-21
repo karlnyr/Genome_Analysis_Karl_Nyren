@@ -4,7 +4,7 @@
 #SBATCH -p core
 #SBATCH -n 2
 #SBATCH -t 05:30:00
-#SBATCH -J Genome_Assembly_Karl_Nyren
+#SBATCH -J htseq_count_rna-seq
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user karl.nyren.6523@student.uu.se
 
