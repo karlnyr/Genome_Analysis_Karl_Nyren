@@ -1,5 +1,5 @@
 # Comparative genomics in Eukaryotes
-If you remember that some alterations can affect the karyotpe then we might be able to when the changes occured. Some of the karyotypic alterations are NHEJ - which is when there is a DS break and then the DNA is inserted with foreign DNA instead of the two ends getting joined again. NAHR are when closely located genes recombine during meiosis such that parts of a gene is removed. Then there is copy/paste - reverse transcriptase, and cut/paste - transposase. 
+If you remember that some alterations can affect the karyotpe then we might be able to when the changes occurred. Some of the karyotypic alterations are NHEJ - which is when there is a DS break and then the DNA is inserted with foreign DNA instead of the two ends getting joined again. NAHR are when closely located genes recombine during meiosis such that parts of a gene is removed. Then there is copy/paste - reverse transcriptase, and cut/paste - transposase. 
 
 Its not always an easy determination of the underlying processes of alterations, sometimes there can be many combinations. 
 
@@ -13,9 +13,10 @@ The false fact that larger genome is more complexity is false, mostly due to tha
 There are some very weird ploidies. Depending on what we want to do with an organism the ploidy may determine what is and what is not possible to infer. Octoploid organisms are difficult to assemble since they have gene duplications, which made it hard to determine what chromosome a read belong to. 
 
 ## Sex-determination. 
-To find these genes we can sequence the heterogametic gender, and if we dont know the sex system we can simply map in both ways, if we have the heterogametic ones we will have genes that wont map to the genome. We can also determine this furhter by making one genome assembly of one heterogametic organism and map males and females to this one. 
+To find these genes we can sequence the heterogametic gender, and if we don't know the sex system we can simply map in both ways, if we have the heterogametic ones we will have genes that wont map to the genome. We can also determine this furhter by making one genome assembly of one heterogametic organism and map males and females to this one. 
 
 Don't be surprised if you find that the system underlying is not what you expected. Stay critical to your data. 
 
 ## Programmed DNA elimination
-We actually have cases when the genome is not the same in somal and germline cells. It can either be parts of the genome that is removed, and in some cases whole chromosomes are removed. An process is shown in ciliates where they have one micro genome in the germline cells that alters the macro genome and resulting in a altered, spliced, genome in the somatic cells. 
+We actually have cases when the genome is not the same in somal and germline cells. It can either be parts of the genome that is removed, and in some cases whole chromosomes are removed. An process is shown in ciliates where they have one micro genome in the germ-line cells that alters the macro genome and resulting in a altered, spliced, genome in the somatic cells. 
+
