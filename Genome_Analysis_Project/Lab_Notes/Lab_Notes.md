@@ -121,3 +121,7 @@ Due to errors when trying to run htseq-count, I decided to convert the file into
 ## Day-16-05-2019
 
 My htseq succeeded but due to a faulty conversion of my annotation I needed to borrow a script that a friend had used to convert gbk to gtf. Now I have correctly assigned "gene_id" columns, so ht-seq should be successful.
+
+## Day-22-05-2019
+
+When interpreting and analysing the differential expression I concluded that there was an abnormal amount of hypothetical proteins that where the ones overexpressed. Neither did I find the cluster complex that they went further in analysis in the paper, the purine chain proteins, which indicates that either my annotation or my alignment is faulty. This can either be due to the fact that I did not have a complete assembly from the get go, thus I decided to go further and complete the asembly with the help of spades and the nanopore and illumina short-reads. After the assembly I will redo the annotation again with prokka and then realign the transcript reads to the new assembly with another aligner, bowtie2, which was used in the paper. Hopefully this will yield a better result.   
