@@ -14,8 +14,8 @@ module load samtools/1.9
 
 RNA_SERUM='RNA-Seq_Serum'
 RNA_BH='RNA-Seq_BH'
-ANNOTATION_DIR='/home/karlnyr/Genome_Analysis/Annotation/DNA/Genome_Assembly/annotated_assembly_110419.gtf'
-ALIGNMENT_DIRS='/home/karlnyr/Genome_Analysis/Mapping'
+ANNOTATION_DIR='/home/karlnyr/Genome_Analysis/Annotation/DNA/Spades_Genome_Assembly/annotated_spades_220519.gtf'
+ALIGNMENT_DIRS='/home/karlnyr/Genome_Analysis/Mapping/spades_assembly_alignments'
 OUTDIR='/home/karlnyr/Genome_Analysis/gene_counts/gene_counts'
 FILE_EXT='_count_140519.txt'
 

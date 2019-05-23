@@ -3,7 +3,7 @@
 #SBATCH -A g2019003
 #SBATCH -p core
 #SBATCH -n 4
-#SBATCH -t 05:30:00
+#SBATCH -t 01:30:00
 #SBATCH -J spades_combined_assembly
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user karl.nyren.6523@student.uu.se
