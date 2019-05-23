@@ -4,7 +4,7 @@
 #SBATCH -p core
 #SBATCH -n 2
 #SBATCH -t 01:30:00
-#SBATCH -J Genome_Assembly_Karl_Nyren
+#SBATCH -J Genome_Annotation_Prokka
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user karl.nyren.6523@student.uu.se
 
