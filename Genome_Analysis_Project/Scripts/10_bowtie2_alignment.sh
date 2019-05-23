@@ -22,17 +22,14 @@ FILE_PRE='trim_paired_'
 FILE_EXT_1='_pass_1.fastq.gz'
 FILE_EXT_2='_pass_2.fastq.gz'
 
-for FILE in $INPUTDIR/$RNA_SERUM/trim_paired_*pass_1*;
+for FILE in $INPUTDIR/$RNA_SERUM/trim*pass_1*;
     do
         READ_PAIR_NAME=`basename $FILE | cut -d "_" -f 3`
         READ_1=$INPUTDIR/$RNA_SERUM/$FILE_PRE$READ_PAIR_NAME$FILE_EXT_1
         READ_2=$INPUTDIR/$RNA_SERUM/$FILE_PRE$READ_PAIR_NAME$FILE_EXT_2
-        command bowtie2 \
-        -x $BT2_INDEX \
-        -1 $READ_1 \
-        -2 $READ_2 \
+        command bowtie2 -x $BT2_INDEX -1 $READ_1 -2 $READ_2 \
         | \
-        samtools view -bS \
+        samtools view -Sb \
         | \
         command samtools sort \
         -o $OUTPUT_DIR/$RNA_SERUM/$READ_PAIR_NAME
@@ -43,12 +40,9 @@ for FILE in $INPUTDIR/$RNA_BH/trim*pass_1*;
         READ_PAIR_NAME=`basename $FILE | cut -d "_" -f 3`
         READ_1=$INPUTDIR/$RNA_BH/$FILE_PRE$READ_PAIR_NAME$FILE_EXT_1
         READ_2=$INPUTDIR/$RNA_BH/$FILE_PRE$READ_PAIR_NAME$FILE_EXT_2
-        command bowtie2 \
-        -x $BT2_INDEX \
-        -1 $READ_1 \
-        -2 $READ_2 \
+        command bowtie2 -x $BT2_INDEX -1 $READ_1 -2 $READ_2 \
         | \
-        samtools view -bS \
+        samtools view -Sb \
         | \
         command samtools sort \
         -o $OUTPUT_DIR/$RNA_BH/$READ_PAIR_NAME
