@@ -14,9 +14,9 @@ module load samtools/1.9
 
 RNA_SERUM='RNA-Seq_Serum'
 RNA_BH='RNA-Seq_BH'
-ASSEMBLY_DIR='/home/karlnyr/Genome_Analysis/Genome_Assembly/pilon/Corrected_Assembly_Pilon_v1.contigs.fasta'
+ASSEMBLY_DIR='/home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/combined_assembly_220519/contigs.fasta'
 INPUTDIR='/home/karlnyr/Genome_Analysis/raw_data/transcriptomics_data'
-OUTDIR='/home/karlnyr/Genome_Analysis/Mapping'
+OUTDIR='/home/karlnyr/Genome_Analysis/Mapping/spades_assembly_alignments'
 
 
 FILE_PRE='trim_paired_'
