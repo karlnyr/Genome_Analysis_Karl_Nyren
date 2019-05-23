@@ -10,6 +10,7 @@
 
 module load bioinfo-tools
 module load bowtie2/2.3.4.3
+module load samtools/1.9
 
 BT2_INDEX='/home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/combined_assembly_220519/spades_assembly_index/e_faecium'
 RNA_SERUM='RNA-Seq_Serum'
