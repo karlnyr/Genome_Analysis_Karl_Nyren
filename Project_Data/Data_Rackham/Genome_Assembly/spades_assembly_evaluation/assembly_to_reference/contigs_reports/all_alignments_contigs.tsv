@@ -1,0 +1,38 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+1	1411492	1411477	1	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_2770208_cov_46.376	99.98		True
+fake: not a misassembly [linear representation of circular genome]
+2317738	2765010	1858733	1411478	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_2770208_cov_46.376	99.99		True
+indel: indel (> 5bp)
+2264949	2317749	1911519	1858734	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_2770208_cov_46.376	99.85		True
+inversion
+1405664	2264352	1911520	2770208	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome	NODE_1_length_2770208_cov_46.376	99.99		True
+CONTIG	NODE_1_length_2770208_cov_46.376	2770208	misassembled
+10456	20759	10318	1	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence	NODE_2_length_287396_cov_101.149	98.69		True
+translocation
+43604	55167	21886	10319	CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence	NODE_2_length_287396_cov_101.149	98.09		True
+translocation
+20304	223688	225266	21887	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence	NODE_2_length_287396_cov_101.149	99.86		True
+translocation
+4417	9595	230442	225267	CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence	NODE_2_length_287396_cov_101.149	99.76		True
+translocation
+6083	14857	239215	230443	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence	NODE_2_length_287396_cov_101.149	98.69		True
+translocation
+1508	49684	287396	239216	CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence	NODE_2_length_287396_cov_101.149	99.77		True
+CONTIG	NODE_2_length_287396_cov_101.149	287396	misassembled
+23	64366	1	64344	CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence	NODE_3_length_64344_cov_75.9459	99.99		True
+CONTIG	NODE_3_length_64344_cov_75.9459	64344	correct
+16677	17224	2327	2874	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence	NODE_4_length_36022_cov_233.329	99.27		True
+local misassembly
+17413	32423	3054	18065	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence	NODE_4_length_36022_cov_233.329	99.8		True
+local misassembly [linear representation of circular genome]
+1	17957	18066	36022	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence	NODE_4_length_36022_cov_233.329	99.99		True
+CONTIG	NODE_4_length_36022_cov_233.329	36022	correct
+1	12104	12240	23	CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence	NODE_5_length_13699_cov_99.9192	98.72		True
+relocation, inconsistency = -10556
+9274	10556	13699	12241	CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence	NODE_5_length_13699_cov_99.9192	97.1		True
+CONTIG	NODE_5_length_13699_cov_99.9192	13699	misassembled
+1	3141	3141	1	CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence	NODE_6_length_9325_cov_146.069	100.0		True
+indel: indel (> 5bp) [linear representation of circular genome]
+3135	9310	9325	3142	CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence	NODE_6_length_9325_cov_146.069	99.77		True
+CONTIG	NODE_6_length_9325_cov_146.069	9325	correct
+CONTIG	NODE_7_length_3214_cov_234.27	3214	unaligned

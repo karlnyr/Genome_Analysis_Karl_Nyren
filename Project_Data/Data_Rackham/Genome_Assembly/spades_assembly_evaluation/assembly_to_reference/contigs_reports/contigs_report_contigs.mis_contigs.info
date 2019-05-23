@@ -1,0 +1,10 @@
+NODE_1_length_2770208_cov_46.376
+Extensive misassembly (inversion) between 1911519 1858734 and 1911520 2770208
+NODE_2_length_287396_cov_101.149
+Extensive misassembly (translocation) between 10318 1 and 32746 10319
+Extensive misassembly (translocation) between 21886 10319 and 225266 21887
+Extensive misassembly (translocation) between 225266 21887 and 234858 225267
+Extensive misassembly (translocation) between 230442 225267 and 245297 230443
+Extensive misassembly (translocation) between 239215 230443 and 287396 239216
+NODE_5_length_13699_cov_99.9192
+Extensive misassembly (relocation, inconsistency = -10556) between 12240 23 and 13699 12241

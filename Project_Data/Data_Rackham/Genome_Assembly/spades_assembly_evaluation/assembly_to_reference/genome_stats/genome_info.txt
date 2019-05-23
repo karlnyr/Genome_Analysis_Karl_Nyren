@@ -1,0 +1,20 @@
+reference chromosomes:
+	CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence (total length: 223688 bp, maximal covered length: 217606 bp)
+	CP014529.1_Enterococcus_faecium_strain_E745__complete_genome (total length: 2765010 bp, maximal covered length: 2764414 bp)
+	CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence (total length: 9310 bp, maximal covered length: 9310 bp)
+	CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence (total length: 32423 bp, maximal covered length: 32423 bp)
+	CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence (total length: 17254 bp, maximal covered length: 12104 bp)
+	CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence (total length: 55167 bp, maximal covered length: 53660 bp)
+	CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence (total length: 65558 bp, maximal covered length: 64344 bp)
+
+total genome size: 3168410
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+contigs                  | 99.54081% | 1.00781     | 5         | -         | -         | -         | -         |

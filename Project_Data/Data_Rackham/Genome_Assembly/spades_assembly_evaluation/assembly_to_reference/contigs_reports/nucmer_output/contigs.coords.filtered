@@ -1,0 +1,20 @@
+    [S1]     [E1]  |     [S2]     [E2]  |  [LEN 1]  [LEN 2]  |  [% IDY]  | [TAGS]
+=====================================================================================
+1 1411492 | 1411477 1 | 1411492 1411477 | 99.98 | CP014529.1_Enterococcus_faecium_strain_E745__complete_genome NODE_1_length_2770208_cov_46.376
+2317738 2765010 | 1858733 1411478 | 447273 447256 | 99.99 | CP014529.1_Enterococcus_faecium_strain_E745__complete_genome NODE_1_length_2770208_cov_46.376
+2264949 2317749 | 1911519 1858734 | 52801 52786 | 99.85 | CP014529.1_Enterococcus_faecium_strain_E745__complete_genome NODE_1_length_2770208_cov_46.376
+1405664 2264352 | 1911520 2770208 | 858689 858689 | 99.99 | CP014529.1_Enterococcus_faecium_strain_E745__complete_genome NODE_1_length_2770208_cov_46.376
+10456 20759 | 10318 1 | 10304 10318 | 98.69 | CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence NODE_2_length_287396_cov_101.149
+43604 55167 | 21886 10319 | 11564 11568 | 98.09 | CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence NODE_2_length_287396_cov_101.149
+20304 223688 | 225266 21887 | 203385 203380 | 99.86 | CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence NODE_2_length_287396_cov_101.149
+4417 9595 | 230442 225267 | 5179 5176 | 99.76 | CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence NODE_2_length_287396_cov_101.149
+6083 14857 | 239215 230443 | 8775 8773 | 98.69 | CP014530.1_Enterococcus_faecium_strain_E745_plasmid_pl1__complete_sequence NODE_2_length_287396_cov_101.149
+1508 49684 | 287396 239216 | 48177 48181 | 99.77 | CP014534.1_Enterococcus_faecium_strain_E745_plasmid_pl5__complete_sequence NODE_2_length_287396_cov_101.149
+23 64366 | 1 64344 | 64344 64344 | 99.99 | CP014535.1_Enterococcus_faecium_strain_E745_plasmid_pl6__complete_sequence NODE_3_length_64344_cov_75.9459
+16677 17224 | 2327 2874 | 548 548 | 99.27 | CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence NODE_4_length_36022_cov_233.329
+17413 32423 | 3054 18065 | 15011 15012 | 99.8 | CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence NODE_4_length_36022_cov_233.329
+1 17957 | 18066 36022 | 17957 17957 | 99.99 | CP014531.1_Enterococcus_faecium_strain_E745_plasmid_pl2__complete_sequence NODE_4_length_36022_cov_233.329
+1 12104 | 12240 23 | 12104 12218 | 98.72 | CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence NODE_5_length_13699_cov_99.9192
+9274 10556 | 13699 12241 | 1283 1459 | 97.1 | CP014533.1_Enterococcus_faecium_strain_E745_plasmid_pl4__complete_sequence NODE_5_length_13699_cov_99.9192
+1 3141 | 3141 1 | 3141 3141 | 100.0 | CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence NODE_6_length_9325_cov_146.069
+3135 9310 | 9325 3142 | 6176 6184 | 99.77 | CP014532.1_Enterococcus_faecium_strain_E745_plasmid_pl3__complete_sequence NODE_6_length_9325_cov_146.069

@@ -1,0 +1,142 @@
+/sw/bioinfo/quast/4.5.4/rackham/bin/quast.py -R /home/karlnyr/Genome_Analysis/raw_data/paper_data/GCA_001750885.1_ASM175088v1_genomic.fna /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/combined_assembly_220519/contigs.fasta -o /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation
+
+Version: 4.5.4
+
+System information:
+  OS: Linux-3.10.0-957.12.1.el7.x86_64-x86_64-with-centos-7.6.1810-Core (linux_64)
+  Python version: 2.7.6
+  CPUs number: 20
+
+Started: 2019-05-22 16:16:36
+
+Logging to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/quast.log
+NOTICE: Output directory already exists. Existing Nucmer alignments can be used
+NOTICE: Maximum number of threads is set to 5 (use --threads option to set it manually)
+
+CWD: /domus/h1/karlnyr
+Main parameters: 
+  Threads: 5, minimum contig length: 500, ambiguity: one, threshold for extensive misassembly size: 1000
+
+Reference:
+  /home/karlnyr/Genome_Analysis/raw_data/paper_data/GCA_001750885.1_ASM175088v1_genomic.fna ==> GCA_001750885.1_ASM175088v1_genomic
+
+Contigs:
+  Pre-processing...
+  /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/combined_assembly_220519/contigs.fasta ==> contigs
+
+2019-05-22 16:16:40
+Running Basic statistics processor...
+  Reference genome:
+    GCA_001750885.1_ASM175088v1_genomic.fna, length = 3168410, num fragments = 7, GC % = 37.70
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 2770208, L50 = 1, Total length = 3184208, GC % = 37.71, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 1x)...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 1x)...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+2019-05-22 16:16:42
+Running Contig analyzer...
+  contigs
+  Logging to files /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/contigs_report_contigs.stdout and contigs_report_contigs.stderr...
+  Aligning contigs to the reference
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/nucmer \
+  -c 65 -l 65 --maxmatch -p /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs \
+  --emem -t 5 /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/quast_corrected_input/GCA_001750885.1_ASM175088v1_genomic.fna \
+  /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/quast_corrected_input/contigs.fasta \
+  >> /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/contigs_report_contigs.stdout \
+  2>> /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/contigs_report_contigs.stderr
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/delta-filter \
+  -i 95.0 -l 0 /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.delta \
+  > /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.fdelta \
+  2> /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/contigs_report_contigs.stderr
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/mummerplot \
+  --html --layout -p /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs \
+  /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.delta \
+  > /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/contigs_report_contigs.stdout \
+  2> /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/contigs_report_contigs.stderr
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/gnuplot/src/gnuplot \
+  /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.gp \
+  > /dev/null 2> /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/contigs_report_contigs.stderr
+  MUMmer plot saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/contigs_mummerplot.html
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/show-coords \
+  /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.delta \
+  > /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.coords_tmp \
+  2> /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/contigs_report_contigs.stderr
+  /sw/bioinfo/quast/4.5.4/rackham/lib/python2.7/site-packages/quast_libs/MUMmer/show-snps \
+  -S -T -H /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.delta \
+  < /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.coords.headless \
+  > /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.all_snps \
+  2> /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/contigs_report_contigs.stderr
+  Analysis is finished.
+
+  Gzipping /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.all_snps to reduce disk space usage...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.all_snps.gz
+  Creating total report...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2019-05-22 16:16:57
+Running NA-NGA calculation...
+  contigs, Largest alignment = 1911519, NA50 = 1911519, NGA50 = 1911519, LA50 = 1, LGA50 = 1
+  Drawing cumulative plot...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/aligned_stats/NGAx_plot.pdf
+Done.
+
+2019-05-22 16:16:58
+Running Genome analyzer...
+  NOTICE: No file with genes provided. Use the -G option if you want to specify it.
+  NOTICE: No file with operons provided. Use the -O option if you want to specify it.
+  contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding option to enable it.
+
+2019-05-22 16:17:00
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2019-05-22 16:17:01
+RESULTS:
+  Text versions of total report are saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/report.html
+  PDF version (tables and plots) is saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/report.pdf
+  Icarus (contig browser) is saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/icarus.html
+  Log saved to /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/quast.log
+
+Finished: 2019-05-22 16:17:01
+Elapsed time: 0:00:25.574365
+NOTICEs: 5; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

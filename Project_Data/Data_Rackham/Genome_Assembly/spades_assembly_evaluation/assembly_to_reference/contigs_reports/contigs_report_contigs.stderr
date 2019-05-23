@@ -1,0 +1,5 @@
+Writing filtered delta file /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.filter
+Reading delta file /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.delta
+Writing plot files /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.fplot, /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.rplot
+Writing gnuplot script /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.gp
+Rendering plot /home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/evaluation/contigs_reports/nucmer_output/contigs.html

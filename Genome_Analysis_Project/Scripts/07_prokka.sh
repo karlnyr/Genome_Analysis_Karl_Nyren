@@ -8,9 +8,9 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user karl.nyren.6523@student.uu.se
 
-OUTDIR='/home/karlnyr/Genome_Analysis/Annotation/DNA/Genome_Assembly'
-PREFIX='annotated_assembly_110419'
-ASSEMBLY_PATH='/home/karlnyr/Genome_Analysis/Genome_Assembly/pilon/Corrected_Assembly_Pilon_v1.contigs.fasta'
+OUTDIR='/home/karlnyr/Genome_Analysis/Annotation/DNA/Spades_Genome_Assembly'
+PREFIX='annotated_spades_220519'
+ASSEMBLY_PATH='/home/karlnyr/Genome_Analysis/Genome_Assembly/spades_combined_assembly/combined_assembly_220519/contigs.fasta'
 
 prokka \
     --outdir $OUTDIR \
