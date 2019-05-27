@@ -20,12 +20,12 @@ suffix_index=$suffix_sorted'.bai'
 
 for FILE in $input_dir/$RNA_Seq_Serum/*;
     do
-        command samtools sort -O bam $FILE -o $input_dir$RNA_Seq_Serum$FILE$suffix -T $input_dir$RNA_Seq_Serum/'tmp'$FILE
-        command samtools index -b $FILE$suffix_sorted $input_dir$RNA_Seq_Serum$FILE$suffix_index
+        command samtools sort -O bam $FILE -o $FILE$suffix -T $FILE'tmp'
+        command samtools index -b $FILE$suffix_sorted $FILE$suffix_index
     done
 
 for FILE in $input_dir/$RNA_Seq_BH/*;
     do
-        command samtools sort -O bam $FILE -o $input_dir$RNA_Seq_BH$FILE$suffix -T $input_dir$RNA_Seq_BH/'tmp'$FILE
-        command samtools index -b $FILE$suffix_sorted $input_dir$RNA_Seq_BH$FILE$suffix_index
+        command samtools sort -O bam $FILE -o $FILE$suffix -T $FILE'tmp'
+        command samtools index -b $FILE$suffix_sorted $FILE$suffix_index
     done
