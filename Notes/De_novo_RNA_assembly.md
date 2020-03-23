@@ -2,9 +2,9 @@
 Transcriptomics are in general used for the expression information it contains. People tend to sample expression data in different tissues, even in singular cells, in order to find possible markers related or causal for a disease. 
 
 What kind of question can we ask when performing RNA-seq experiments?
-    * What parts of the genome are expressed?
-    * Does transcript sequences look the same in the genome, and in that gene fusion detection or RNA editing possibilities. 
-    * Most popular is probably at what levels and in what form are genes expressed, and then their function and such.
+* What parts of the genome are expressed?
+* Does transcript sequences look the same in the genome, and in that gene fusion detection or RNA editing possibilities. 
+* Most popular is probably at what levels and in what form are genes expressed, and then their function and such.
 
 However, today we will be focusing on the de novo sequencing instead of the analysis. So why would we like to sequence RNA instead of DNA? The transcriptome is generally __smaller__ than the genome, and since a lot of genome is not transcribed the "not to functional" data could be avoided. It is less repetitive, we can combine to get a reference for functional studies, some features can only be observed at the RNA level (_e.g alternative isoforms, fusion transcripts, RNA editing_).
 ## Genes, transcripts and contigs
